@@ -1,0 +1,62 @@
+body,html{
+  margin: 0;
+  padding: 0;
+}
+.img{
+  position: relative;
+  background-image: url("https://ishikawa-sake.jp/images/24-2.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.img::before{
+  content: '';
+  display: block;
+  padding-top: 50%;
+}
+
+.title{ 
+  position: absolute;
+  width: 100%;
+  bottom: 0; 
+  height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+}
+
+.message{ 
+  position: absolute; 
+  left: 0;
+  width: 100%;
+  bottom: 0; 
+  height: 100%; */
+  background-color: rgba(0,0,0,0.3);
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+}
+
+.go {
+  position: absolute; 
+  bottom: 100px;
+  left: 900px;
+  width: 150px;
+  /* ブロックレベル要素化 */
+  display: block;
+   /* サイズ指定 */
+  width: 200px;
+  height: 50px;
+  /* 縦横中央揃え */
+  text-align: center;
+  line-height: 50px;
+  /* 色指定 */
+  color: #FFFFFF; 
+  background-color: cadetblue;
+  /* その他 */
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+}

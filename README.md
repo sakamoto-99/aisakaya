@@ -1,24 +1,39 @@
-# README
+## usersテーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| nickname           | string     | null: false                    |
+| email              | string     | null: false, unique: true      |
+| encrypted_password | string     | null: false                    |
 
-Things you may want to cover:
+### Association
+- belongs_to :sake
+- has_many :comments
 
-* Ruby version
 
-* System dependencies
+## sakesテーブル
 
-* Configuration
+| Column             | Type       | Options                        |
+| ------------------ | ---------- | ------------------------------ |
+| title              | string     | null: false                    |
+| title_kana         | string     | null: false                    |
+| text               | text       | null: false                    |
+| star_id            | integer    | null: false                    |
+| user               | references | foreign_key: true              |
 
-* Database creation
+### Association
+- has_many :users
+- has_many :comments
 
-* Database initialization
 
-* How to run the test suite
+## commentssテーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+| Column     | Type       | Options                                |
+| ---------- | ---------- | -------------------------------------- |
+| text       | text       | null: false                            |
+| star_id    | integer    | null: false                            |
 
-* Deployment instructions
+### Association
+- belongs_to :sake
+- belongs_to :user
 
-* ...
