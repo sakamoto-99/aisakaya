@@ -16,6 +16,10 @@ body,html{
   padding-top: 50%;
 }
 
+html,body{
+  overflow: hidden
+}
+
 .title{ 
   position: absolute;
   width: 100%;
@@ -54,7 +58,7 @@ body,html{
   line-height: 50px;
   /* 色指定 */
   color: #FFFFFF; 
-  background-color: cadetblue;
+  background-color: cornsilk;
   /* その他 */
   font-size: 25px;
   font-family: 'Times New Roman', Times, serif;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="new.css">
-    <title>相坂屋</title>
+    <title>相酒屋</title>
   </head>
 
 	<div class="cp_cont">
@@ -27,8 +27,17 @@
 			<h1>お好きなポイントをクリックして下さい</h1>
   	</div>
   	<div class="img_block">
-    	<img src="https://img.furusato-tax.jp/img/x/stg/product/detail/details/20200910/spdd_330ef73978a23aa33c06b0ba7f8093b012b3b164.jpg
-             " alt="トップ画像です" >
+    	<%# <img src="https://img.furusato-tax.jp/img/x/stg/product/detail/details/20200910/spdd_330ef73978a23aa33c06b0ba7f8093b012b3b164.jpg
+             " usemap="#ImageMap" alt="トップ画像です" > %>
+			<%# <%= image_tag "sake.jpeg" %> 
+			<%# <%= link_to image_tag("sake.jpeg"), usemap="#image-map" %>  
+			<img src="https://img.furusato-tax.jp/img/x/stg/product/detail/details/20200910/spdd_330ef73978a23aa33c06b0ba7f8093b012b3b164.jpg" alt=”マトリックス” usemap="#image-map" >  
+			<map name="image-map">
+    		<area alt="1"  href="http://www.aramasa.jp/" coords="0,0,451,288" shape="rect">
+    		<area alt="2"  href="http://www.kenbishi.co.jp/" coords="290,0,900,288" shape="rect">
+    		<area alt="3"  href="http://www.heiwashuzou.co.jp/wordpress/" coords="0,290,451,576" shape="rect">
+  	  	<area alt="4"  href="https://harukasumi.com/" coords="451,290,900,576" shape="rect">
+	 		</map>
   	</div>
 	</div>
 

@@ -88,12 +88,14 @@ a {
 	color: #333333;
 	text-align: center;
   font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 .content {
 	color: #333333;
 	text-align: center;
   font-size: 10px;
+	font-family: 'Times New Roman', Times, serif;
 }
 
 .img_block img {
