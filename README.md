@@ -7,11 +7,10 @@
 | encrypted_password | string     | null: false                    |
 
 ### Association
-- belongs_to :sake
-- has_many :comments
+- has_many :memos
 
 
-## sakesテーブル
+## memosテーブル
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
@@ -22,18 +21,4 @@
 | user               | references | foreign_key: true              |
 
 ### Association
-- has_many :users
-- has_many :comments
-
-
-## commentssテーブル
-
-| Column     | Type       | Options                                |
-| ---------- | ---------- | -------------------------------------- |
-| text       | text       | null: false                            |
-| star_id    | integer    | null: false                            |
-
-### Association
-- belongs_to :sake
 - belongs_to :user
-
