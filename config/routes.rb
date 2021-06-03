@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root 'sakes#index'
   get "/" => 'sakes#index'
   resources :sakes, only: [:index, :new]
-  resources :aisakayas, only: [:new]
+  resources :aisakayas, only: [:index, :new]
 end
