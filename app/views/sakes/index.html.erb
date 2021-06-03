@@ -14,10 +14,13 @@
     </div>
 	  <div class="message">
       <h2>相酒屋は新たな好みのお酒との出会いの場です。</h2>
-   </div>
-  	<div class="go"> 
-	    <%# <a href="new_sake_path">←入店する</a> %>
+    </div>
+  	<%# <div class="go"> 
       <%= link_to '←入店する', new_sake_path %>
-  	</div> 
+  	<%# </div>  %>
+    <div class="animation">
+      <div class="effect"></div>
+      <%= link_to '←入店する', new_sake_path %>
+    </div>
   </body>
 </html>

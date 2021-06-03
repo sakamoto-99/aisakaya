@@ -1,4 +1,4 @@
-class CreateSakes < ActiveRecord::Migration[6.0]
+class CreateMemos < ActiveRecord::Migration[6.0]
   def change
     create_table :sakes do |t|
       t.string     :title,              null: false

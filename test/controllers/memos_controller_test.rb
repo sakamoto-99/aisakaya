@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class SakeTest < ActiveSupport::TestCase
+class MemosControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

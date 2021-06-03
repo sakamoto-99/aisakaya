@@ -1,2 +1,0 @@
-class Sake < ApplicationRecord
-end
