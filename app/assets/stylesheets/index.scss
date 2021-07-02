@@ -12,12 +12,6 @@ body,html{
   height: 100vh;
 }
 
-.img::before{
-  content: '';
-  display: block;
-  padding-top: 50%;
-}
-
 html,body{
   overflow: hidden
 }
@@ -43,28 +37,6 @@ html,body{
   font-size: 20px;
 }
 
-.go {
-  position: absolute; 
-  bottom: 100px;
-  left: 900px;
-  width: 150px;
-  /* ブロックレベル要素化 */
-  display: block;
-   /* サイズ指定 */
-  width: 200px;
-  height: 50px;
-  /* 縦横中央揃え */
-  text-align: center;
-  line-height: 50px;
-  /* 色指定 */
-  color: #FFFFFF; 
-  background-color: cornsilk;
-  /* その他 */
-  font-size: 25px;
-  font-family: 'Times New Roman', Times, serif;
-  text-decoration: none;
-}
-
 .animation {
   position: absolute; 
   bottom: 120px;
@@ -73,13 +45,12 @@ html,body{
   height:50px;
   text-align:center;
   border:2px solid #BBBBBB;
-  float:left;
   cursor:pointer;
   position:relative;
   box-sizing:border-box;
   overflow:hidden;
-  margin:0 0 40px 0;
 }
+
 .animation a {
   font-family:arial;
   font-size:18px;
@@ -89,8 +60,8 @@ html,body{
   transition:all .10s ease;
   z-index:2;
   position:relative;
-  
 }
+
 .effect {
   width:140px;
   height:50px;
@@ -101,9 +72,11 @@ html,body{
   transition:all .5s ease;
   z-index:1;
 }
+
 .animation:hover .effect {
   left:0;
 }
+
 .animation:hover a {
   color:#FFFFFF;
 }
